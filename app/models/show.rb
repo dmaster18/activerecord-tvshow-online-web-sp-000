@@ -5,5 +5,7 @@ class Show < ActiveRecord::Base
   end
   
   def self.most_popular_show
-end
+    self.where()
+  
+  end
 end
