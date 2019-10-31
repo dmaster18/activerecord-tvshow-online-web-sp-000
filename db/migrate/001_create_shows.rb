@@ -4,7 +4,7 @@ class CreateShows
     create_table :shows do |t|
       t.string :name
       t.string :network
-      t.datetime :day
+      t.string :day
       t.rating :integer
       
     end
