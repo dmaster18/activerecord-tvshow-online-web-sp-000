@@ -8,6 +8,13 @@ class Show < ActiveRecord::Base
     self.where(highest_rating)
   end
   
-  def 
+  def self.lowest_rating
+    self.minimum(:rating)
+  end
+  
+  def self.least_popular_show
+    self.where(lowest_rating)
+  end
+  
   
 end
